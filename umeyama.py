@@ -14,7 +14,6 @@
 
 # umeyama function from scikit-image/skimage/transform/_geometric.py
 
-import numpy as np
 import torch
 
 
