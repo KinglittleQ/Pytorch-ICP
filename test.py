@@ -15,7 +15,7 @@ def test():
     t0 = time()
     for i in range(100):
         reg = open3d_icp_match(source_pcd, target_pcd, max_iteration=1000)
-    print('Open3d: {}s for 100 matches'.format(time() - t0))
+    print('Open3d: {}s for 100 loops'.format(time() - t0))
     print(reg.transformation)
 
     source = np.asarray(source_pcd.points)
@@ -26,7 +26,7 @@ def test():
     t0 = time()
     for i in range(100):
         transf_mat = matcher.icp_match(source, target)
-    print('Pytorch ICP: {}s for 100 matches'.format(time() - t0))
+    print('Pytorch ICP: {}s for 100 loops'.format(time() - t0))
     print(transf_mat)
 
 

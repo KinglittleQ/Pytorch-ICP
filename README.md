@@ -13,6 +13,8 @@ open3d (optional, it is only used in test.py and not neccesary)
 ## How to use
 
 ``` python
+import numpy as np
+from icp_matcher import ICPMatcher
 
 # You can also load point cloud without open3d
 source_pcd = o3d.io.read_point_cloud('data/source.pcd')
